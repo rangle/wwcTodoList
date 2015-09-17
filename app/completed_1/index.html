@@ -8,7 +8,10 @@
 </head>
 <body>
 		<div ng-controller="Controller as controller">
-
+				<div>
+						<input ng-model="controller.input" type="text">
+				</div>
+				<p>{{ controller.input }}</p>
 		</div>
 		<script src="script.js"></script>
 </body>
