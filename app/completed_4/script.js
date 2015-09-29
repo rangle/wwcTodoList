@@ -13,7 +13,7 @@ function Controller() {
 		};
 		vm.todoList.push(todoObject);
 		vm.newTodo = null;
-	}
+	};
 
 	vm.removeTodo = function(todoIndex){
 		vm.todoList.splice(todoIndex, 1);
