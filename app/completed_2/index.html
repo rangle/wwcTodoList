@@ -9,7 +9,16 @@
 <body>
 		<div ng-controller="Controller as controller">
 
-		</div>
+      <h1>{{controller.title}}</h1>
+
+      <div>
+        <input ng-model="controller.newTodo" type="text">
+        <button ng-click="controller.addTodo()">Add Todo</button>
+      </div>
+
+      <div>{{controller.todoList}}</div>
+
+    </div>
 		<script src="script.js"></script>
 </body>
 </html>

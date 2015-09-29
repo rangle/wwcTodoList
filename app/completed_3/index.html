@@ -9,6 +9,17 @@
 <body>
 		<div ng-controller="Controller as controller">
 
+      <h1>{{controller.title}}</h1>
+
+      <div>
+        <input ng-model="controller.newTodo" type="text">
+        <button ng-click="controller.addTodo()">Add Todo</button>
+      </div>
+
+      <ul>
+        <li ng-repeat="todo in controller.todoList">{{todo.text}}</li>
+      </ul>
+
 		</div>
 		<script src="script.js"></script>
 </body>

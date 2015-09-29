@@ -9,6 +9,13 @@
 <body>
 		<div ng-controller="Controller as controller">
 
+      <h1>{{controller.title}}</h1>
+
+      <input ng-model="controller.newTodo" type="text">
+      <div>
+        <h3>{{controller.newTodo}}</h3>
+      </div>
+
 		</div>
 		<script src="script.js"></script>
 </body>
