@@ -33,3 +33,5 @@ way to bundle code and templates into reusable components. This app will only
 need one directive; but we are pretty sure that they would be fantastic for the
 apps you make after this course. We hope you get to this part even if we run out
 of time.
+
+Slides: https://docs.google.com/presentation/d/1OZaWJWytKmPwq6n_nzcY9YhPDYdrLvG9-tUrkIxfSmU/edit#slide=id.p
