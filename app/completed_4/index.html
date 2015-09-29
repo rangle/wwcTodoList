@@ -7,9 +7,23 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
 </head>
 <body>
-		<div ng-controller="Controller as controller">
+    <div ng-controller="Controller as controller">
 
-		</div>
+      <h1>{{controller.title}}</h1>
+
+      <div>
+        <input ng-model="controller.newTodo" type="text">
+        <button ng-click="controller.addTodo()">Add Todo</button>
+      </div>
+
+      <ul>
+        <li ng-repeat="todo in controller.todoList">
+          <h2>{{todo.text}}</h2>
+          <button ng-click="controller.removeTodo($index)">delete</button>
+        </li>
+      </ul>
+
+    </div>
 		<script src="script.js"></script>
 </body>
 </html>
