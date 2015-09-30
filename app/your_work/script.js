@@ -6,6 +6,4 @@ function todoControllerFunction() {
 	var todoCtrl = this;
 
 
-	todoCtrl.header = 'Cats are awesome!';
-
 }

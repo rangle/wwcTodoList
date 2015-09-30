@@ -8,16 +8,16 @@
 		<script type="text/javascript" src="../../assets/vendor/angular/angular.min.js"></script>
 </head>
 <body>
-		<div ng-controller="Controller as controller">
+		<div ng-controller="todoListController as todoCtrl">
 
-      <h1>{{controller.title}}</h1>
+      <h1>{{todoCtrl.title}}</h1>
 
       <div>
-        <input ng-model="controller.newTodo" type="text">
-        <button ng-click="controller.addTodo()">Add Todo</button>
+        <input ng-model="todoCtrl.newTodo" type="text">
+        <button ng-click="todoCtrl.addTodo()">Add Todo</button>
       </div>
 
-      <div>{{controller.todoList}}</div>
+      <div>{{todoCtrl.todoList}}</div>
 
     </div>
 		<script src="script.js"></script>

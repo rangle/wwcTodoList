@@ -1,7 +1,7 @@
 angular.module('todoList', [])
-	.controller('Controller', Controller);
+	.controller('todoListController', todoControllerFunction);
 
-function Controller() { 
+function todoControllerFunction() {
 	var vm = this;
 	vm.title = 'Todo List!';
 	vm.todoList = [];

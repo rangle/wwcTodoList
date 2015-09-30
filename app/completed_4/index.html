@@ -8,19 +8,19 @@
 		<script type="text/javascript" src="../../assets/vendor/angular/angular.min.js"></script>
 </head>
 <body>
-    <div ng-controller="Controller as controller">
+    <div ng-controller="todoListController as todoCtrl">
 
-      <h1>{{controller.title}}</h1>
+      <h1>{{todoCtrl.title}}</h1>
 
       <div>
-        <input ng-model="controller.newTodo" type="text">
-        <button ng-click="controller.addTodo()">Add Todo</button>
+        <input ng-model="todoCtrl.newTodo" type="text">
+        <button ng-click="todoCtrl.addTodo()">Add Todo</button>
       </div>
 
       <ul>
-        <li ng-repeat="todo in controller.todoList">
+        <li ng-repeat="todo in todoCtrl.todoList">
           <h2>{{todo.text}}</h2>
-          <button ng-click="controller.removeTodo($index)">delete</button>
+          <button ng-click="todoCtrl.removeTodo($index)">delete</button>
         </li>
       </ul>
 
