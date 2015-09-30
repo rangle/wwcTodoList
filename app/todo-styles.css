@@ -1,7 +1,9 @@
 body {
+    background-color: lightgray;
     padding-top: 30px;
     display: flex;
     justify-content: center;
+    font-family: Arial;
 }
 
 #todo-list {
@@ -10,7 +12,8 @@ body {
     align-items: center;
     width: 450px;
     height: 600px;
-    background-color: lightgray;
+    border: solid 1px #b9b9b9;
+    box-shadow: 6px 4px 5px #888888;
 }
 
 .strike {
@@ -29,8 +32,9 @@ body {
 .list-item {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 5px 10px;
 }
 
 .list-item input[type='checkbox'] {
@@ -45,6 +49,7 @@ body {
     font-size: 14px;
     background-color: #FF5722;
     color: white;
+    box-shadow: 2px 1px 3px #888888;
 }
 
 #input-todo-container {
@@ -64,4 +69,5 @@ body {
     font-size: 14px;
     background-color: #4CAF50;
     color: white;
+    box-shadow: 2px 1px 3px #888888;
 }

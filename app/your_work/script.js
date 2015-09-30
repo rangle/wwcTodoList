@@ -1,7 +1,11 @@
-angular.module('todoList', [])
-	.controller('Controller', Controller);
+var myApp = angular.module('todoList', []);
 
-function Controller() { 
-	var vm = this;
+myApp.controller('todoListController', todoControllerFunction);
+
+function todoControllerFunction() {
+	var todoCtrl = this;
+
+
+	todoCtrl.header = 'Cats are awesome!';
 
 }
