@@ -2,12 +2,12 @@ angular.module('todoList', [])
 	.controller('todoListController', todoControllerFunction);
 
 function todoControllerFunction() {
-	var vm = this;
-	vm.title = 'Todo List!';
-	vm.todoList = [];
+	var todoCtrl = this;
+	todoCtrl.title = 'Todo List!';
+	todoCtrl.todoList = [];
 
-	vm.addTodo = function(){
-		vm.todoList.push(vm.newTodo);
-		vm.newTodo = null;
+	todoCtrl.addTodo = function(){
+		todoCtrl.todoList.push(todoCtrl.newTodo);
+		todoCtrl.newTodo = null;
 	}
 }

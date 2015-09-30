@@ -8,13 +8,13 @@
 		<script type="text/javascript" src="../../assets/vendor/angular/angular.min.js"></script>
 </head>
 <body>
-		<div ng-controller="todoListController as todoCtrl">
+		<div ng-controller="todoListController as todoCtrl" id="todo-list">
 
       <h1>{{todoCtrl.title}}</h1>
 
-      <div>
+      <div id="input-todo-container">
         <input ng-model="todoCtrl.newTodo" type="text">
-        <button ng-click="todoCtrl.addTodo()">Add Todo</button>
+        <button ng-click="todoCtrl.addTodo()">Add</button>
       </div>
 
       <div>{{todoCtrl.todoList}}</div>
